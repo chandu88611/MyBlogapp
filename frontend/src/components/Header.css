@@ -1,0 +1,13 @@
+.App-bar{
+    position: sticky;
+    display: block;
+    background-color: rgb(255, 0, 106);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: black;
+
+}
+
+.box{
+    display: flex;
+    margin-left: auto;
+}
