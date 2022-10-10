@@ -11,7 +11,7 @@ import bcrypt from "bcryptjs";
     } 
     if(!users){ 
         return res.status(404).json({message:"no users found"})
-    }
+    } 
     return res.status(200).json({users})
 }
 export const createUser= async (req,res,next)=>{
@@ -58,7 +58,7 @@ const isCorrectPassword=bcrypt.compareSync(password,existingUser.password)
 if(!isCorrectPassword){
     return res.status(400).json({message:"Incorrect password"})
 }
-return res.status(200).json({message:"logged in succesfully"})
+return res.status(200).json({message:"logged in succesfully",user:existingUser})
 }
 
 // export {getAllUser}

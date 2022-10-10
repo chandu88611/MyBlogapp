@@ -2,8 +2,11 @@ import express from "express"
 import mongoose from "mongoose"
 import router from "./routes/router.js"
 import blogRouter from "./routes/blog-router.js"
+import cors from "cors"
+
 
 const app=express()
+app.use(cors())
  app.use(express.json())
  app.use("/",router)
  app.use("/blog",blogRouter)
@@ -20,6 +23,7 @@ const app=express()
 // app.get("/",(req,res)=>{
 //     res.send("hello chandan")
 // })
+
 
 app.listen(5000,()=>{
     console.log('conected')

@@ -1,0 +1,21 @@
+.main3_div{
+    display: flex;
+    /* background-color: black; */
+    align-items: center;
+    justify-content: center;
+    margin-top:10%;
+}
+
+.Box{
+background-color: rgb(153, 238, 174);
+width: 40vw;
+height: 100%;
+box-shadow: 1px 1px 3px rgb(100, 99, 99);
+border-radius: 5px;
+padding: 4px;
+}
+.text{
+    background-color: white;
+  
+    color: black;
+}
